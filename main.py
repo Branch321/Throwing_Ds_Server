@@ -8,7 +8,8 @@ from pyftpdlib.servers import FTPServer
 
 
 authorizer = DummyAuthorizer()
-authorizer.add_anonymous("characters/")
+# The msg_login variable needs to be updated with the version number
+authorizer.add_anonymous(".", msg_login="1.0")
 handler = FTPHandler
 handler.authorizer = authorizer
 server = FTPServer(("127.0.0.1", 1026), handler)
