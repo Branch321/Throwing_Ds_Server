@@ -1,6 +1,7 @@
 # A simple FTP server to host character sheets for
 # Throwin_Ds: RPG Assistant -  https://github.com/Branch321/Throwing_Ds
 # So simple there is no need for comments
+# Need to have a frozen version of main from Throwing D's stored in a zip file named "current_version.zip"
 
 from pyftpdlib.authorizers import DummyAuthorizer
 from pyftpdlib.handlers import FTPHandler
